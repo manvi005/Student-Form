@@ -1,0 +1,214 @@
+.class-view {
+  min-height: 100vh;
+  text-align: center;
+  background-color: rgb(179, 178, 178);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  color: black;
+}
+
+.search-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-controls input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.search-controls button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.search-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.search-btn:disabled {
+  background-color: #80bdff;
+  cursor: not-allowed;
+}
+
+.back-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 12px 8px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* Fix for photo cells */
+.photo-cell {
+  width: 80px;
+  padding: 4px;
+  max-width: 80px;
+  max-height: 80px;
+  position: relative;
+}
+
+.photo-container {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.no-photo {
+  background-color: #f1f1f1;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-cell {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.student-name-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.student-name-link:hover {
+  text-decoration: underline;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.status-badge.approved {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.loading-message, .no-results-message {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .class-view {
+    padding: 10px;
+  }
+  
+  .search-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-controls input,
+  .search-controls button {
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 0;
+  }
+  
+  th, td {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+  
+  .photo-cell {
+    width: 50px;
+    max-width: 50px;
+    padding: 2px;
+  }
+  
+  .photo-container {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .status-badge {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  table {
+    font-size: 11px;
+  }
+  
+  .photo-cell {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .photo-container {
+    width: 40px;
+    height: 40px;
+  }
+}

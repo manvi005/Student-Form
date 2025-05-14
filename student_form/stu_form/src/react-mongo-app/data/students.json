@@ -1,0 +1,24 @@
+[
+  {
+    "Name": "jason",
+    "Email": "abcdef@gmail.com",
+    "Age": 21,
+    "Number": "111",
+    "Regno": "23bce11283",
+    "Classno": "113",
+    "status": "pending",
+    "createdAt": "2025-05-14T08:44:06.051Z",
+    "_id": "1747212246052"
+  },
+  {
+    "Name": "hello",
+    "Email": "hello@gmail.com",
+    "Age": 20,
+    "Number": "111",
+    "Regno": "23bce11261",
+    "Classno": "111",
+    "status": "approved",
+    "createdAt": "2025-05-14T09:15:23.455Z",
+    "_id": "1747214123456"
+  }
+]
