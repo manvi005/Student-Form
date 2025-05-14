@@ -5,6 +5,8 @@ const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 const os = require('os');
+require("dotenv").config();
+
 
 // Use environment variables for server configuration
 const PORT = process.env.PORT || 3000;
